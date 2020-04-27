@@ -1,6 +1,5 @@
 
-// Importieren von zusätzlichen Features; hier: Scanner
-import java.util.*;
+// import java.util.*;
 
 public class Variables {
     public static void main(final String[] args) {
