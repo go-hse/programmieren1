@@ -8,20 +8,20 @@ public class Input {
         // sondern Punkte als Dezimaltrennzeichen (US)
         Locale.setDefault(Locale.US);
 
-        Scanner in = new Scanner(System.in);
+        Scanner inscanner = new Scanner(System.in);
 
         System.out.print("Bitte 3 Zahlen und einen String eingeben: ");
 
-        int i = in.nextInt();
-        float f = in.nextFloat();
-        double d = in.nextDouble();
-        String s = in.next();
+        int i = inscanner.nextInt();
+        float f = inscanner.nextFloat();
+        double d = inscanner.nextDouble();
+        String s = inscanner.next();
 
         // Ausgeben der Zahlen, jeweils mit neun Stellen,
         // führenden Nullen %05.2f führende Leerzeichen %5.2f
         // zwei Nachkommastellen bei den Fließkommazahlen
         System.out.format("%nFormatierte Zahlen: int %d float %.2f double %.2f '%s' %n", i, f, d, s);
 
-        in.close();
+        inscanner.close();
     }
 }
