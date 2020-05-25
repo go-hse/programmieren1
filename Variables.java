@@ -3,11 +3,10 @@
 
 public class Variables {
     public static void main(final String[] args) {
-        // Locale.setDefault(Locale.US);
 
-        int i = 5;
-        float f = 3.1415f;
+        int i = 15 % 4;
+        int j = 15 / 4;
 
-        System.out.format("Zahl %d %.2f %n", i, f);
+        System.out.format("i: %d %d %n", i, j);
     }
 }

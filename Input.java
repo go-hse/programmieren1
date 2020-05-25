@@ -13,6 +13,7 @@ public class Input {
         System.out.print("Bitte 3 Zahlen und einen String eingeben: ");
 
         int i = inscanner.nextInt();
+
         float f = inscanner.nextFloat();
         double d = inscanner.nextDouble();
         String s = inscanner.next();
@@ -20,7 +21,7 @@ public class Input {
         // Ausgeben der Zahlen, jeweils mit neun Stellen,
         // führenden Nullen %05.2f führende Leerzeichen %5.2f
         // zwei Nachkommastellen bei den Fließkommazahlen
-        System.out.format("%nFormatierte Zahlen: int %d float %.2f double %.2f '%s' %n", i, f, d, s);
+        System.out.format("%nFormatierte Zahlen: int %05d float %9.2f double %.2f '%s' %n", i, f, d, s);
 
         inscanner.close();
     }

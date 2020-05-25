@@ -6,12 +6,29 @@ public class NewArrays {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
 
-        Scanner inscanner = new Scanner(System.in);
-        int sizeOFArray = inscanner.nextInt();
-        int[] iarray = new int[sizeOFArray];
-        inscanner.close();
-        System.out.format("%d : %d : %d %n", iarray[0], iarray[1], iarray.length);
-        String[] sarray = { "Hallo", "Hochschule", "Esslingen" };
-        System.out.format("%s : %s : %d %n", sarray[0], sarray[2], iarray.length);
+        int i = 1;
+
+        int j = i++; // Post-Inkrement -- Dekrement
+        System.out.println(j);
+        j = ++i; // Prä-Inkrement
+
+        ++i; // +1
+        i = i + 5;
+        i += 5;
+
+        i = 105;
+
+        j = 105 / 10; // 10
+        j = 105 % 10; // 5
+
+        boolean gerade = i % 2 == 0;
+
+        // 1 ... 100
+
+        if (i % 10 == 0) {
+
+        }
+
+        System.out.println(j);
     }
 }
